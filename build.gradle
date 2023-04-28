@@ -22,9 +22,9 @@ def versionCode() {
 def versionName() {
     def stdout = new ByteArrayOutputStream()
     if (rootProject.file("gradlew").exists())
-        exec { commandLine 'git', 'describe', '--tags', '--always', '--dirty'; standardOutput = stdout }
+        exec { commandLine 'git', 'describe', '--tags', '--always', '--match=v[0-9]*', '--dirty'; standardOutput = stdout }
     else // automatic build system, don't tag dirty
-        exec { commandLine 'git', 'describe', '--tags', '--always'; standardOutput = stdout }
+        exec { commandLine 'git', 'describe', '--tags', '--always', '--match=v[0-9]*'; standardOutput = stdout }
     return stdout.toString().trim().substring(1)
 }
 
