@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85db8ceb_0272b977",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-11-28T22:21:22Z",
+      "side": 1,
+      "message": "Can\u0027t rebase as that\u0027ll lead to a lower version code. ",
+      "revId": "53148e535cf255208d47243650f12ce018f600b8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
